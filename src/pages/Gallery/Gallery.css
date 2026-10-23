@@ -1,0 +1,154 @@
+
+/* PÁGINA GALERIA */
+
+.gallery-page {
+  min-height: calc(100vh - 72px);
+  background: #1b1b1b;
+  padding: 80px 24px;
+  color: var(--white);
+}
+
+.gallery-container {
+  max-width: 1060px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* CABEÇALHO */
+
+.gallery-header {
+  margin-bottom: 34px;
+}
+
+.gallery-eyebrow {
+  font-family: 'Anton', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.gallery-header h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.gallery-description {
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* GRID DA GALERIA */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+/* CARDS */
+
+.gallery-card {
+  height: 430px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+}
+
+/* GRADIENTES */
+
+.gallery-vermelho {
+  background: linear-gradient(
+    160deg,
+    #982b2b 0%,
+    #64201f 58%,
+    #1a1111 100%
+  );
+  border-bottom-color: #a33733;
+}
+
+.gallery-dourado {
+  background: linear-gradient(
+    160deg,
+    #b89629 0%,
+    #78621d 50%,
+    #211c0e 100%
+  );
+  border-bottom-color: #aa8627;
+}
+
+.gallery-preto {
+  background: linear-gradient(
+    160deg,
+    #292626 0%,
+    #191818 60%,
+    #101010 100%
+  );
+}
+
+/* TÍTULOS DOS CARDS */
+
+.gallery-card-content {
+  width: 100%;
+  padding: 18px 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.gallery-card h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-card {
+    height: 360px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-page {
+    padding: 55px 20px 70px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .gallery-card {
+    height: 350px;
+  }
+
+  .gallery-header h1 {
+    font-size: 38px;
+  }
+
+  .gallery-description {
+    font-size: 14px;
+  }
+}

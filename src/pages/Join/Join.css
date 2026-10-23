@@ -1,0 +1,231 @@
+
+/* PÁGINA FAÇA PARTE */
+
+.join-page {
+  min-height: calc(100vh - 177px);
+  background: #f1ece2;
+  color: #111111;
+  padding: 80px 24px 100px;
+}
+
+.join-container {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+/* CABEÇALHO */
+
+.join-header {
+  margin-bottom: 18px;
+}
+
+.join-eyebrow {
+  font-family: 'Anton', sans-serif;
+  color: #bd5551;
+  font-size: 15px;
+  letter-spacing: 1.6px;
+  margin-bottom: 12px;
+}
+
+.join-header h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.15;
+  margin-bottom: 15px;
+}
+
+.join-header > p:not(.join-eyebrow) {
+  color: #66635f;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.8;
+  max-width: 650px;
+  margin-bottom: 0;
+}
+
+/* ORGANIZAÇÃO DAS COLUNAS */
+
+.join-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 58px;
+  align-items: start;
+}
+
+/* FORMULÁRIO */
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.join-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.join-field label {
+  font-size: 12px;
+  font-weight: 800;
+  color: #111111;
+}
+
+.join-field input,
+.join-field select,
+.join-field textarea {
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 0;
+  background: #ffffff;
+  color: #111111;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding: 13px 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.join-field input,
+.join-field select {
+  height: 45px;
+}
+
+.join-field textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.join-field input:focus,
+.join-field select:focus,
+.join-field textarea:focus {
+  border-color: #c93b30;
+}
+
+.join-field input::placeholder,
+.join-field textarea::placeholder {
+  color: #8b8b8b;
+}
+
+/* BOTÃO */
+
+.join-submit {
+  align-self: flex-start;
+  background: #c93b30;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  padding: 17px 28px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  transition: background 0.2s;
+}
+
+.join-submit:hover {
+  background: #a92e25;
+}
+
+.join-feedback {
+  font-size: 13px;
+  font-weight: 600;
+  color: #55514c;
+  line-height: 1.6;
+}
+
+/* CONTATO DA ACADEMIA */
+
+.join-contact h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 24px;
+  margin-bottom: 26px;
+}
+
+.join-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin: 0;
+}
+
+.join-contact-list > div {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.join-contact-list dt {
+  font-size: 12px;
+  font-weight: 700;
+  color: #77736f;
+}
+
+.join-contact-list dd {
+  font-size: 14px;
+  color: #111111;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* LINK ALUNO / PROFESSOR */
+
+.join-access {
+  border-top: 1px solid #d4cec3;
+  margin-top: 45px;
+  padding-top: 45px;
+}
+
+.join-access p {
+  color: #77736f;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.join-access a {
+  color: #bd5551;
+  font-weight: 800;
+}
+
+.join-access a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  .join-page {
+    padding: 55px 20px 75px;
+  }
+
+  .join-grid {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .join-header h1 {
+    font-size: clamp(36px, 8vw, 48px);
+  }
+
+  .join-contact-list > div {
+    grid-template-columns: 95px 1fr;
+  }
+
+  .join-access {
+    margin-top: 35px;
+    padding-top: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .join-submit {
+    width: 100%;
+  }
+
+  .join-header h1 {
+    font-size: 36px;
+  }
+}

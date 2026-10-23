@@ -1,0 +1,18 @@
+
+.footer {
+  min-height: 105px;
+  background: var(--bg-section);
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.footer p {
+  color: #77736f;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}

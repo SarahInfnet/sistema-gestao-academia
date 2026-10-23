@@ -1,0 +1,125 @@
+
+/* PÁGINA SOBRE NÓS */
+
+.about-page {
+  min-height: calc(100vh - 72px);
+  background: #f1ece2;
+  color: #111111;
+  padding: 80px 24px 105px;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+/* APRESENTAÇÃO */
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 75px;
+  align-items: start;
+}
+
+.about-eyebrow {
+  font-family: 'Anton', sans-serif;
+  color: #bd5551;
+  font-size: 15px;
+  letter-spacing: 1.6px;
+  margin-bottom: 12px;
+}
+
+.about-text h1 {
+  font-size: clamp(38px, 3.5vw, 53px);
+  line-height: 0.99;
+  margin-bottom: 26px;
+  letter-spacing: -0.5px;
+}
+
+.about-text > p:not(.about-eyebrow) {
+  color: #66635f;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* VALORES DA ACADEMIA */
+
+.about-values {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.about-value {
+  border-left: 2px solid #b63532;
+  padding-left: 18px;
+}
+
+.about-value h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+
+.about-value p {
+  color: #696663;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* SEÇÃO DO PROFESSOR */
+
+.about-professor {
+  margin-top: 65px;
+  padding-top: 45px;
+  border-top: 1px solid #d4cec3;
+}
+
+.about-professor h2 {
+  font-size: 25px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.about-professor > p:last-child {
+  max-width: 650px;
+  color: #66635f;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 55px 20px 75px;
+  }
+
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-text h1 {
+    font-size: clamp(36px, 8vw, 50px);
+  }
+
+  .about-values {
+    gap: 20px;
+  }
+
+  .about-professor {
+    margin-top: 55px;
+    padding-top: 35px;
+  }
+}

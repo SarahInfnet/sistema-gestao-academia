@@ -1,0 +1,147 @@
+
+/* PÁGINA ALUNO / PROFESSOR */
+
+.access-page {
+  min-height: calc(100vh - 177px);
+  background: #1b1b1b;
+  color: var(--white);
+  padding: 80px 24px 110px;
+}
+
+.access-container {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+/* CABEÇALHO */
+
+.access-header {
+  margin-bottom: 36px;
+}
+
+.access-eyebrow {
+  font-family: 'Anton', sans-serif;
+  color: var(--gold);
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.access-header h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(38px, 4vw, 54px);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.access-description {
+  max-width: 620px;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* CARTÕES */
+
+.access-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.access-card {
+  background: #101010;
+  border: 1px solid var(--border);
+  min-height: 220px;
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: border-color 0.2s ease;
+}
+
+.access-card:hover {
+  border-color: var(--gold);
+}
+
+.access-card h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 24px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.access-card p {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* BOTÕES */
+
+.access-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 26px;
+  min-height: 50px;
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.access-button:hover {
+  background: var(--red);
+  border-color: var(--red);
+  color: #ffffff;
+}
+
+.access-button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  .access-page {
+    padding: 55px 20px 75px;
+  }
+
+  .access-header h1 {
+    font-size: 40px;
+  }
+
+  .access-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .access-card {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .access-header h1 {
+    font-size: 36px;
+  }
+
+  .access-card {
+    padding: 24px 20px;
+  }
+
+  .access-button {
+    width: 100%;
+  }
+}

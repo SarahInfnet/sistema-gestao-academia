@@ -1,0 +1,178 @@
+
+/* PÁGINA MODALIDADES */
+
+.modalities-page {
+  min-height: calc(100vh - 72px);
+  background: #1b1b1b;
+  color: var(--white);
+  padding: 80px 24px;
+}
+
+.modalities-container {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+/* CABEÇALHO */
+
+.modalities-header {
+  margin-bottom: 32px;
+}
+
+.modalities-eyebrow {
+  font-family: 'Anton', sans-serif;
+  color: var(--gold);
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.modalities-header h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.modalities-description {
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* LISTA DE MODALIDADES */
+
+.modalities-list {
+  border-top: 1px solid var(--border);
+}
+
+.modality-item {
+  display: grid;
+  grid-template-columns: 70px 48px minmax(0, 1fr) 120px;
+  align-items: center;
+  gap: 20px;
+  min-height: 130px;
+  padding: 22px 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* NÚMERO DA MODALIDADE */
+
+.modality-code {
+  font-family: 'Anton', sans-serif;
+  font-size: 27px;
+  color: var(--gold);
+}
+
+/* ÍCONE CIRCULAR */
+
+.modality-icon {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+}
+
+.modality-icon svg {
+  width: 25px;
+  height: 25px;
+  stroke: var(--gold);
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* INFORMAÇÕES DA MODALIDADE */
+
+.modality-info h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.modality-info p {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.8;
+  max-width: 550px;
+  margin-bottom: 0;
+}
+
+/* INDICADOR DE TURMA ATIVA */
+
+.modality-status {
+  justify-self: end;
+  background: var(--gold);
+  color: #111111;
+  padding: 7px 12px;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  .modalities-page {
+    padding: 55px 20px 70px;
+  }
+
+  .modalities-header h1 {
+    font-size: 38px;
+  }
+
+  .modality-item {
+    grid-template-columns: 45px 43px minmax(0, 1fr);
+    gap: 12px;
+    padding: 24px 0;
+  }
+
+  .modality-code {
+    font-size: 24px;
+  }
+
+  .modality-info h2 {
+    font-size: 21px;
+  }
+
+  .modality-status {
+    grid-column: 3;
+    justify-self: start;
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalities-header h1 {
+    font-size: 34px;
+  }
+
+  .modality-item {
+    grid-template-columns: 36px 38px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .modality-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .modality-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .modality-info p {
+    font-size: 12px;
+  }
+}
